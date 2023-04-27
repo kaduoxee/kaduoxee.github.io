@@ -136,20 +136,39 @@
             <!-- ps-4 pe-4 pt-2 -->
             <p class="h2">
                 <span class="post-title">
-                    my-second-blog
+                    普通maven项目接入springBoot
                 </span>   
             </p>
 
             <div class="pb-3 pt-1 pe-3">
                 <i class="fa fa-calendar p-1"></i>
-                2023/04/25 16:43:23 
+                2023/04/27 12:07:34 
                 
 
                 
             </div>
 
             <div class="border-bottom pb-2">
-                 
+                <h2 id="一、利用idea创建一个maven项目"><a href="#一、利用idea创建一个maven项目" class="headerlink" title="一、利用idea创建一个maven项目"></a>一、利用idea创建一个maven项目</h2><p>​    <img src=".\img\mvn-boot1.png" style="zoom: 70%;" /></p>
+<p>​    直接点击next，然后修改项目名、选择项目所在目录，再直接finish。</p>
+<h2 id="二、修改新项目的pom文件"><a href="#二、修改新项目的pom文件" class="headerlink" title="二、修改新项目的pom文件"></a>二、修改新项目的pom文件</h2><p>​    需要给pom文件添加两处内容</p>
+<p>​        1.指定父级依赖</p>
+<pre><code>    <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--SpringBoot版本--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>1.5.9.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</code></pre>
+<p>​        2.引入spring-boot-starter-web依赖</p>
+ <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="三、写一个启动类"><a href="#三、写一个启动类" class="headerlink" title="三、写一个启动类"></a>三、写一个启动类</h2><p>​    首先新建一个    com.author.项目名    的包，假定为com.kaduoxee.austin，然后</p>
+<p>​    在austin包下新建启动类如下</p>
+<p>​    <img src="./img/mvn-boot2.png" style="zoom:50%;" /></p>
+<p>​    </p>
+<h2 id="四、写一个controller"><a href="#四、写一个controller" class="headerlink" title="四、写一个controller"></a>四、写一个controller</h2><p>​    在上述austin包下新建一个controller或web包，在改包下新建一个控制层类如下</p>
+<p>​    （注意添加@ResponseBody注解，直接返回字符串，因为此时还没有创建html页面）</p>
+<p>​    <img src="./img/mvn-boot3.png" style="zoom:50%;" /></p>
+<h2 id="五、检验是否接入成功"><a href="#五、检验是否接入成功" class="headerlink" title="五、检验是否接入成功"></a>五、检验是否接入成功</h2><p>最后我们可以启动app 访问一下127.0.0.1:8080/hello</p>
+<img src="./img/mvn-boot4.png" style="zoom:50%;margin-left:20px;margin-top:5px" />
+
+ 
             </div>
         </div>
         
@@ -157,18 +176,11 @@
                 <!-- 前一页后一页 -->
 <div class="previous-next-links">
      
-    <div class="previous-design-link">
-        <a href="/2023/04/25/test/">
-            <i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i>
-            test
-        </a>
-    </div>
-     
 
      
     <div class="next-design-link">
-        <a href="/2023/04/25/hello-world/">
-            Hello World
+        <a href="/2023/04/25/test/">
+            test
             <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i>
         </a>
     </div>
@@ -182,6 +194,10 @@
     <div class="col-2 pe-0">
         <div class="d-none d-sm-none d-md-block sticky-top border-start">
              
+    
+        <div>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%88%A9%E7%94%A8idea%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAmaven%E9%A1%B9%E7%9B%AE"><span class="toc-number">1.</span> <span class="toc-text">一、利用idea创建一个maven项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BF%AE%E6%94%B9%E6%96%B0%E9%A1%B9%E7%9B%AE%E7%9A%84pom%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">二、修改新项目的pom文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%86%99%E4%B8%80%E4%B8%AA%E5%90%AF%E5%8A%A8%E7%B1%BB"><span class="toc-number">3.</span> <span class="toc-text">三、写一个启动类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%86%99%E4%B8%80%E4%B8%AAcontroller"><span class="toc-number">4.</span> <span class="toc-text">四、写一个controller</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%A3%80%E9%AA%8C%E6%98%AF%E5%90%A6%E6%8E%A5%E5%85%A5%E6%88%90%E5%8A%9F"><span class="toc-number">5.</span> <span class="toc-text">五、检验是否接入成功</span></a></li></ol> 
+        </div>
     
  
 
