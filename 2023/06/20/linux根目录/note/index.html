@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaduoxee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="/css/prism.css">
+ 
+    
+<script src="/js/prism.js"></script>
+
+    
+<link rel="stylesheet" href="/css/index.css">
+ 
+    
+<script src="/js/search.js"></script>
+
+
+     
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+        </script>
+     
+
+     
+        <script src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
+        
+<script src="/js/fancybox.js"></script>
+
+    
+
+    <script type="text/javascript">
+
+        var search_path = "/search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+ 
+ 
+<body>
+    <!-- 导航栏 -->
+    <!-- 导航栏 -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 pt-2 pb-2">
+    <div class="container">
+        <!-- 标题 --> 
+        <a class="navbar-brand navbar-expand-sm" href="/">
+            <img class="nofancybox" src="/logo.png" style="width: 75px;"  alt="Qing's blog">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 左边右边导航按钮 --> 
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <!-- 左右两侧的导航栏 -->
+
+ 
+ 
+
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+           <big> <i class="fa fa-home ps-1" ></i> 主页</big>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/archives">
+           <big> <i class="fa fa-archive ps-1" ></i> 归档</big>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/about">
+           <big> <i class="fa fa-user ps-1" ></i> 关于</big>
+        </a>
+    </li>
+ 
+ 
+            </ul>
+
+            
+            <form class="">
+                <div class="d-flex">
+                    <button class="btn text-muted fa fa-search d-none d-md-block d-lg-block" disabled></button>
+                    <input id="local-search-input" class="form-control me-2 pe-4" type="search"
+                            placeholder="搜索 " aria-label="Search">
+                </div>
+                <div id="local-search-result" style="position:absolute; padding-top: 8px; max-height: 960px; width: 480px;overflow-y: scroll; z-index: 1050;"></div>
+            </form>
+            
+            <ul class="navbar-nav">
+                <!-- 左右两侧的导航栏 -->
+
+ 
+ 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <main class="container">
+        
+<div class="container-fluid markdown-section">
+<div class="row pb-3">
+    <div class="col-md-2 d-none d-sm-none d-md-block ps-0">
+        <!-- 同一类型的文件 -->
+
+ 
+    </div>
+    <div class="col-md-8 col-sm-12">
+        <!-- 博客详情 -->
+        <div class="">
+            <!-- ps-4 pe-4 pt-2 -->
+            <p class="h2">
+                <span class="post-title">
+                    linux根目录
+                </span>   
+            </p>
+
+            <div class="pb-3 pt-1 pe-3">
+                <i class="fa fa-calendar p-1"></i>
+                2023/06/20 12:59:21 
+                
+
+                
+            </div>
+
+            <div class="border-bottom pb-2">
+                <h1 id="Linux目录"><a href="#Linux目录" class="headerlink" title="Linux目录"></a>Linux目录</h1><p><img src="l1.png"></p>
+<p>linux窗口左侧边栏中，root表示当前用户名，localhost表示主机名， “~”表示当前用户文件夹(可参考，Windows  C:\Users\26918)。</p>
+<p>使用”pwd”(对应windows下的chdir)查看当前路径可知，root用户(即管理员用户)的用户文件夹为”/root”，</p>
+<p><img src="l2.png"></p>
+<p>通常普通用户(如”zzt”)的文件夹位置为   /home/zzt  。</p>
+<h2 id="根目录下常用文件夹的作用"><a href="#根目录下常用文件夹的作用" class="headerlink" title="根目录下常用文件夹的作用"></a>根目录下常用文件夹的作用</h2><p>使用    “cd /“    命令可以进入linux根目录，再使用  ll 可以查看当前路径下文件夹或及文件，这些文件夹是Linux系统自带的，有着固定的作用。</p>
+<img src="l3.png" style="zoom:70%;" />
+
+<p>其中深蓝色的代表文件夹，如”boot，dev，etc，home”等，浅蓝色的代表快捷方式，如”bin，lib，lib64，sbin”其箭头(-&gt;)后面代表的是目标位置。</p>
+<h3 id="bin目录"><a href="#bin目录" class="headerlink" title="bin目录"></a>bin目录</h3><p>全称binaries</p>
+<p>cd bin</p>
+<p>进入bin目录，再调用    ls    命令    列出bin目录下内容</p>
+<img src="l4.png" style="zoom:80%;" />
+
+
+
+<p>可以看到其中大部分字段为绿色，这代表当前内容为    <i style="color:#55ff55">可执行文件</i>     如(‘[‘,elfedit,isosize,readelf等等)。所以我们可以将编辑好的可执行文件存放在    /bin    目录下。</p>
+<h3 id="usr目录"><a href="#usr目录" class="headerlink" title="usr目录"></a>usr目录</h3><p>/usr 是linux系统核心所在，包含了所有的共享文件，涵盖了二进制文件，各种文档，各种头文件，x，还有各种库文件；还有诸多程序，例如 ftp，telnet 等等。曾作为unix系统的用户目录，会在/usr/someone目录下存放用户相关信息。现已被home目录取代。usr目录全称有两种说法</p>
+<p>​    unix system resources：unix系统资源</p>
+<p>​    unix software resources：unix软件资源</p>
+<h3 id="var目录"><a href="#var目录" class="headerlink" title="var目录"></a>var目录</h3><p> 软件运行所产生的数据存放目录，如日志、数据库文件、缓存文件。(如果内容较多，可单独分区，或与/usr放在同一分区)</p>
+<h3 id="etc目录"><a href="#etc目录" class="headerlink" title="etc目录"></a>etc目录</h3><p>配置文件</p>
+<h3 id="boot目录"><a href="#boot目录" class="headerlink" title="boot目录"></a>boot目录</h3><p>系统开机时需要用到的文件。</p>
+<h3 id="dev目录"><a href="#dev目录" class="headerlink" title="dev目录"></a>dev目录</h3><p>在linux中所有的东西都是以文件的形式存放在    /dev    目录，例如你插入一个鼠标，dev目录下会相应生成一个”鼠标文件”。</p>
+<img src="l5.png" style="zoom:70%;" />
+
+<p>列出dev目录下的内容可以看到有许多黄色的字段，这些代表    <span style="color:yellow">虚拟设备对应的文件</span>    。</p>
+<h3 id="lib目录"><a href="#lib目录" class="headerlink" title="lib目录"></a>lib目录</h3><p>函数库包含了/bin或/sbin下的指令会用到的函数库。</p>
+<h3 id="lib64目录"><a href="#lib64目录" class="headerlink" title="lib64目录"></a>lib64目录</h3><p>与lib类似。</p>
+<h3 id="sbin目录"><a href="#sbin目录" class="headerlink" title="sbin目录"></a>sbin目录</h3><p>system-only-binaries，仅系统可调用的命令。</p>
+<h3 id="media目录"><a href="#media目录" class="headerlink" title="media目录"></a>media目录</h3><p>包含了一些可删除设备，一般是系统自动挂载可移除的装置，挂载后装置图标会出现在桌面窗口的左边栏。如软碟、光碟、DVD、U盘。</p>
+<h3 id="mnt目录"><a href="#mnt目录" class="headerlink" title="mnt目录"></a>mnt目录</h3><p>早期media，与之类似</p>
+<h3 id="opt目录"><a href="#opt目录" class="headerlink" title="opt目录"></a>opt目录</h3><p>第三方软件目录，建议将自己开发的程序，系统存入此目录。</p>
+<h3 id="proc目录"><a href="#proc目录" class="headerlink" title="proc目录"></a>proc目录</h3><p>虚拟文件系统，与内核有关</p>
+<h3 id="root目录"><a href="#root目录" class="headerlink" title="root目录"></a>root目录</h3><p>系统管理员目录</p>
+<h3 id="home目录"><a href="#home目录" class="headerlink" title="home目录"></a>home目录</h3><p>存放普通用户相关文件，使用        cd ~        命令可以进入到当前用户目录</p>
+<p>即cd ~与cd /home/someone或者cd /root等价。</p>
+<h3 id="sys目录"><a href="#sys目录" class="headerlink" title="sys目录"></a>sys目录</h3><p>系统常用文件</p>
+<h3 id="tmp目录"><a href="#tmp目录" class="headerlink" title="tmp目录"></a>tmp目录</h3><p>临时文件</p>
+ 
+            </div>
+        </div>
+        
+            <div class="mt-3">
+                <!-- 前一页后一页 -->
+<div class="previous-next-links">
+     
+
+     
+    <div class="next-design-link">
+        <a href="/2023/06/12/ebooks/ebooks/">
+            ebooks项目小记
+            <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+ 
+</div> 
+             
+            </div>
+        
+
+    </div>
+    <div class="col-2 pe-0">
+        <div class="d-none d-sm-none d-md-block sticky-top border-start">
+             
+    
+        <div>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E7%9B%AE%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">Linux目录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text">根目录下常用文件夹的作用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bin%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.1.</span> <span class="toc-text">bin目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#usr%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">usr目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#var%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.3.</span> <span class="toc-text">var目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#etc%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.4.</span> <span class="toc-text">etc目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#boot%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.5.</span> <span class="toc-text">boot目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dev%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.6.</span> <span class="toc-text">dev目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lib%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.7.</span> <span class="toc-text">lib目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lib64%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.8.</span> <span class="toc-text">lib64目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sbin%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.9.</span> <span class="toc-text">sbin目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#media%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.10.</span> <span class="toc-text">media目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mnt%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.11.</span> <span class="toc-text">mnt目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#opt%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.12.</span> <span class="toc-text">opt目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#proc%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.13.</span> <span class="toc-text">proc目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.14.</span> <span class="toc-text">root目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#home%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.15.</span> <span class="toc-text">home目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sys%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.16.</span> <span class="toc-text">sys目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tmp%E7%9B%AE%E5%BD%95"><span class="toc-number">1.1.17.</span> <span class="toc-text">tmp目录</span></a></li></ol></li></ol></li></ol> 
+        </div>
+    
+ 
+
+        </div>
+    </div>
+</div>
+</div>
+ 
+    </main>
+
+    <!-- 底部栏 -->
+    <footer class="bg-dark pt-3 pb-0 mt-5" id="flex_bottom">
+    <div class="container pb-3 pt-3 text-center">
+        <p class="text-muted tag-hover">
+            All Rights Reserved <i class="fa fa-copyright"></i> 2017-2023 笑颜网 smileyan.cn <br> 
+            Powered by 
+             <a class="link-secondary text-decoration-none" target="_blank" rel="noopener" href="https://hexo.io">
+                 Hexo.io
+            </a> &  <a class="link-secondary text-decoration-none" target="_blank" rel="noopener" href="https://github.com/smile-yan/hexo-theme-heyan">
+               heyan
+            </a>
+            <br>
+            <a class="link-secondary text-decoration-none" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">
+                <img src="/police.png" style="width: 18px; height: 18px; margin-top: -4px" class="nofancybox">
+                湘ICP备 17012851号 
+            </a>
+        </p>
+    </div>
+</footer>
+
+</body> 
+</html>
