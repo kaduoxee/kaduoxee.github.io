@@ -149,18 +149,19 @@
             </div>
 
             <div class="border-bottom pb-2">
-                <h1 id="Linux目录"><a href="#Linux目录" class="headerlink" title="Linux目录"></a>Linux目录</h1><p><a target="_blank" rel="noopener" href="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l1.png"><img src="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l1.png" alt="img"></a></p>
+                <h1 id="Linux目录"><a href="#Linux目录" class="headerlink" title="Linux目录"></a>Linux目录</h1><p><img src="l1.png"></p>
 <p>linux窗口左侧边栏中，root表示当前用户名，localhost表示主机名， “~”表示当前用户文件夹(可参考，Windows C:\Users\26918)。</p>
 <p>使用”pwd”(对应windows下的chdir)查看当前路径可知，root用户(即管理员用户)的用户文件夹为”/root”，</p>
-<p><a target="_blank" rel="noopener" href="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l2.png"><img src="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l2.png" alt="img"></a></p>
+<p><img src="l2.png"></p>
 <p>通常普通用户(如”zzt”)的文件夹位置为 /home/zzt 。</p>
 <h2 id="根目录下常用文件夹的作用"><a href="#根目录下常用文件夹的作用" class="headerlink" title="根目录下常用文件夹的作用"></a>根目录下常用文件夹的作用</h2><p>使用 “cd /“ 命令可以进入linux根目录，再使用 ll 可以查看当前路径下文件夹或及文件，这些文件夹是Linux系统自带的，有着固定的作用。</p>
-<p><a target="_blank" rel="noopener" href="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l3.png"><img src="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l3.png" alt="img"></a></p>
+<img src="l3.png" style="zoom:80%;" />
+
 <p>其中深蓝色的代表文件夹，如”boot，dev，etc，home”等，浅蓝色的代表快捷方式，如”bin，lib，lib64，sbin”其箭头(-&gt;)后面代表的是目标位置。</p>
 <h3 id="bin目录"><a href="#bin目录" class="headerlink" title="bin目录"></a>bin目录</h3><p>全称binaries</p>
 <p>cd bin</p>
 <p>进入bin目录，再调用 ls 命令 列出bin目录下内容</p>
-<p><a target="_blank" rel="noopener" href="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l4.png"><img src="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l4.png" alt="img"></a></p>
+<p><img src="l4.png"></p>
 <p>可以看到其中大部分字段为绿色，这代表当前内容为 <em>可执行文件</em> 如(‘[‘,elfedit,isosize,readelf等等)。所以我们可以将编辑好的可执行文件存放在 /bin 目录下。</p>
 <h3 id="usr目录"><a href="#usr目录" class="headerlink" title="usr目录"></a>usr目录</h3><p>/usr 是linux系统核心所在，包含了所有的共享文件，涵盖了二进制文件，各种文档，各种头文件，x，还有各种库文件；还有诸多程序，例如 ftp，telnet 等等。曾作为unix系统的用户目录，会在/usr/someone目录下存放用户相关信息。现已被home目录取代。usr目录全称有两种说法</p>
 <p> unix system resources：unix系统资源</p>
@@ -169,7 +170,7 @@
 <h3 id="etc目录"><a href="#etc目录" class="headerlink" title="etc目录"></a>etc目录</h3><p>配置文件</p>
 <h3 id="boot目录"><a href="#boot目录" class="headerlink" title="boot目录"></a>boot目录</h3><p>系统开机时需要用到的文件。</p>
 <h3 id="dev目录"><a href="#dev目录" class="headerlink" title="dev目录"></a>dev目录</h3><p>在linux中所有的东西都是以文件的形式存放在 /dev 目录，例如你插入一个鼠标，dev目录下会相应生成一个”鼠标文件”。</p>
-<p><a target="_blank" rel="noopener" href="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l5.png"><img src="https://kaduoxee.github.io/2023/06/20/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/note/l5.png" alt="img"></a></p>
+<p><img src="l5.png"></p>
 <p>列出dev目录下的内容可以看到有许多黄色的字段，这些代表 虚拟设备对应的文件 。</p>
 <h3 id="lib目录"><a href="#lib目录" class="headerlink" title="lib目录"></a>lib目录</h3><p>函数库包含了/bin或/sbin下的指令会用到的函数库。</p>
 <h3 id="lib64目录"><a href="#lib64目录" class="headerlink" title="lib64目录"></a>lib64目录</h3><p>与lib类似。</p>
