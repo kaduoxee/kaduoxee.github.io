@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaduoxee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="/css/prism.css">
+ 
+    
+<script src="/js/prism.js"></script>
+
+    
+<link rel="stylesheet" href="/css/index.css">
+ 
+    
+<script src="/js/search.js"></script>
+
+
+     
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+        </script>
+     
+
+     
+        <script src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"> </script>
+        
+<script src="/js/fancybox.js"></script>
+
+    
+
+    <script type="text/javascript">
+
+        var search_path = "/search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+ 
+ 
+<body>
+    <!-- 导航栏 -->
+    <!-- 导航栏 -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 pt-2 pb-2">
+    <div class="container">
+        <!-- 标题 --> 
+        <a class="navbar-brand navbar-expand-sm" href="/">
+            <img class="nofancybox" src="/logo.png" style="width: 75px;"  alt="Qing's blog">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 左边右边导航按钮 --> 
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <!-- 左右两侧的导航栏 -->
+
+ 
+ 
+
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+           <big> <i class="fa fa-home ps-1" ></i> 主页</big>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/archives">
+           <big> <i class="fa fa-archive ps-1" ></i> 归档</big>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/about">
+           <big> <i class="fa fa-user ps-1" ></i> 关于</big>
+        </a>
+    </li>
+ 
+ 
+            </ul>
+
+            
+            <form class="">
+                <div class="d-flex">
+                    <button class="btn text-muted fa fa-search d-none d-md-block d-lg-block" disabled></button>
+                    <input id="local-search-input" class="form-control me-2 pe-4" type="search"
+                            placeholder="搜索 " aria-label="Search">
+                </div>
+                <div id="local-search-result" style="position:absolute; padding-top: 8px; max-height: 960px; width: 480px;overflow-y: scroll; z-index: 1050;"></div>
+            </form>
+            
+            <ul class="navbar-nav">
+                <!-- 左右两侧的导航栏 -->
+
+ 
+ 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <main class="container">
+        
+<div class="container-fluid markdown-section">
+<div class="row pb-3">
+    <div class="col-md-2 d-none d-sm-none d-md-block ps-0">
+        <!-- 同一类型的文件 -->
+
+ 
+    </div>
+    <div class="col-md-8 col-sm-12">
+        <!-- 博客详情 -->
+        <div class="">
+            <!-- ps-4 pe-4 pt-2 -->
+            <p class="h2">
+                <span class="post-title">
+                    linux常用命令
+                </span>   
+            </p>
+
+            <div class="pb-3 pt-1 pe-3">
+                <i class="fa fa-calendar p-1"></i>
+                2023/06/22 10:45:33 
+                
+
+                
+            </div>
+
+            <div class="border-bottom pb-2">
+                <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h2><p>cd 切换目录，change directory</p>
+<p>cd ..    返回上级目录</p>
+<p>cd dir    切换到dir目录</p>
+<p>cd /        回到根目录</p>
+<p>cd ~        切换到当前用户目录</p>
+<h2 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h2><p>查看当前目录</p>
+<h2 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h2><p>创建目录，mkdir test</p>
+<p>在当前路径下新建一个test目录。</p>
+<img src="l1.png" style="zoom:120%;" />
+
+<h2 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h2><p>ls    查看当前目录下内容</p>
+<p>ls -l        可以缩写为        ll        查看当前目录下内容详细信息（文件类型、读写权限、创建者、大小、创建时间、文件名）</p>
+<img src="l2.png" style="zoom:80%;" />
+
+<p>ls -a    查看目录下包括隐藏文件在内的全部内容。</p>
+<p>ls -al    列出全部内容的详细信息     ll -a    与之等价。</p>
+<img src="l3.png" style="zoom:60%;" />
+
+<h2 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h2><p>rm -rf test        删除test路径。 </p>
+<p>rm -f a.txt        删除文件a.txt。</p>
+<h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><p>vi a.txt        创建文件</p>
+<p>创建文件后按    Esc    再按    :wq    可以保存当前文件。</p>
+<h3 id="i-编辑文件"><a href="#i-编辑文件" class="headerlink" title="i    编辑文件"></a>i    编辑文件</h3><p>vi a.txt 创建或者进入a.txt文件后</p>
+<p>按    i    键编辑文件。</p>
+<p>linux系统命令行界面下不能使用鼠标。</p>
+<p>在编辑文件时，可以使用H,J,K,L键来控制光标，依次为左、下、上、右；也可以直接使用方向键。</p>
+<p>也可以通过    数字    +    方向键    来快速移动光标。</p>
+<p>ctrl    +    f     ：向下翻页。</p>
+<p>ctrl    +    b    ：向上翻页。</p>
+<p>ctrl    +    d    ：向下翻半页。</p>
+<p>ctrl    +    u    ：向上翻半页。</p>
+<p>数字    +    空格    ：光标向后移    “数字”    个字符。</p>
+<p>g    +    g    ：回到首行。</p>
+<p>G    ：去到末行。</p>
+<p>num    +    G：跳转到第    “num”    行。</p>
+<p>d    +    d：删除当前行。</p>
+<p>/    +    关键词    ：向下查找。</p>
+<p>?    +    关键词    ：向上查找。</p>
+<p>u    ：撤销。</p>
+<p>ctrl    +    r：回退撤销。</p>
+<p>0    ：行首。</p>
+<p>$    ：行尾。</p>
+<h3 id="tail"><a href="#tail" class="headerlink" title="tail"></a>tail</h3><p>tail a.txt：    列出a.txt最后10行。</p>
+<p>tail -num a.txt：    列出a.txt最后    num    行。</p>
+<p>(当我们用vi编辑文件时，实际上是复制了文件内容在对其进行修改，最后wq保存时用新文件覆盖旧文件，</p>
+<p>echo msg &gt;&gt; a.txt    才是直接对文件进行修改，追加内容)</p>
+<p>tail -F a.txt：    追踪文件名a.txt（）</p>
+<p>tail -f a.txt ：    追踪文件a.txt (用vi编辑文件时该命令无法追踪文件)</p>
+<h2 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h2><p>cp a.txt b.txt        将a.txt文件复制一份到当前路径，并命名为b.txt</p>
+<p>cp a.txt t1        将a.txt复制到当前路径的子路径t1下，也命名为a.txt</p>
+<img src="l4.png" style="zoom:100%;" />
+
+<p>如果t1路径下已有a.txt文件，会提示是否覆盖，输入y代表重写，舍弃旧文件；n代表不重写，保留旧文件。</p>
+<img src="l5.png" style="zoom:120%;" />
+
+
+
+
+
+<h2 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h2><p>剪切，移动        还可以给文件重命名</p>
+<p>mv a.txt t2        将当前路径下a.txt文件移动到   t2路径下</p>
+<img src="l6.png" style="zoom:120%;" />
+
+
+
+<p>mv a.txt b.txt        将a.txt文件改名为b.txt文件。</p>
+<img src="l7.png" style="zoom:120%;" />
+
+
+
+<h2 id="gerp"><a href="#gerp" class="headerlink" title="gerp"></a>gerp</h2><p>过滤，筛选，    语法：    常规命令 |grep “关键词”</p>
+<p>示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tail -20 a.txt |grep &quot;A:&quot;</span><br><span class="line">tail -20 a.txt |grep &quot;A:&quot; |grep &quot;C&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<img src="l8.png" style="zoom: 50%;" />
+
+
+
+<h2 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h2><p>全文查找，类似于mysql的select *。</p>
+<p>语法：cat a.txt        ，该命令会打印出a.txt文件的全部内容，可配合grep使用类似于mysql中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from a.txt where * like &quot;%关键字%&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>示例：cat a.txt |grep “A:” </p>
+<img src="l9.png" style="zoom: 120%;" />
+
+
+
+<h2 id="whereis"><a href="#whereis" class="headerlink" title="whereis"></a>whereis</h2><p>语法：whereis    +    命令    ，查看名函数所在的位置</p>
+<p>示例：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost t2]# whereis less</span><br><span class="line">less: /usr/bin/less /usr/share/man/man1/less.1.gz</span><br><span class="line">[root@localhost t2]# </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><p>用于查找文件等内容的位置。(在当前目录及其所有子目录下查找)</p>
+<p>示例：find -name a.txt</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# cd lib</span><br><span class="line">[root@localhost lib]# find -name a.txt </span><br><span class="line">[root@localhost lib]# cd /</span><br><span class="line">[root@localhost /]# cd ~</span><br><span class="line">[root@localhost ~]# find -name a.txt</span><br><span class="line">./test/t2/a.txt</span><br></pre></td></tr></table></figure>
+
+
+
+<p>更多查找命令：<a style="color:#95b94b;text-decoration:none" 
+href="https://www.cnblogs.com/ginvip/p/6357352.html" target="_blank">传送门</a></p>
+<h2 id="echo-PATH"><a href="#echo-PATH" class="headerlink" title="echo $PATH"></a>echo $PATH</h2><p>查看环境变量目录。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost t2]# echo $PATH</span><br><span class="line">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin</span><br><span class="line">[root@localhost t2]# </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="which"><a href="#which" class="headerlink" title="which"></a>which</h2><p>which    命令    ，在环境变量目录中查找该命令确切位置</p>
+<p>示例：which whereis;        which find.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# which whereis</span><br><span class="line">/usr/bin/whereis</span><br><span class="line">[root@localhost ~]# which find</span><br><span class="line">/usr/bin/find</span><br><span class="line">[root@localhost ~]# </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# which i</span><br><span class="line">/usr/bin/which: no i in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin)</span><br><span class="line">[root@localhost ~]# which wq</span><br><span class="line">/usr/bin/which: no wq in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin)</span><br><span class="line">[root@localhost ~]# </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="top"><a href="#top" class="headerlink" title="top"></a>top</h2><p>打开任务管理器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# top</span><br></pre></td></tr></table></figure>
+
+<img src="l10.png" style="zoom:45%;" />
+
+
+
+
+
+ 
+            </div>
+        </div>
+        
+            <div class="mt-3">
+                <!-- 前一页后一页 -->
+<div class="previous-next-links">
+     
+    <div class="previous-design-link">
+        <a href="/2023/06/22/linux%E6%A0%B9%E7%9B%AE%E5%BD%95/Linux%E6%A0%B9%E7%9B%AE%E5%BD%95/">
+            <i style="font-size:16px;" class="fa fa-arrow-left" aria-hidden="true"></i>
+            linux根目录
+        </a>
+    </div>
+     
+
+     
+    <div class="next-design-link">
+        <a href="/2023/06/12/ebooks/ebooks/">
+            ebooks项目小记
+            <i style="font-size:16px;" class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+ 
+</div> 
+             
+            </div>
+        
+
+    </div>
+    <div class="col-2 pe-0">
+        <div class="d-none d-sm-none d-md-block sticky-top border-start">
+             
+    
+        <div>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">Linux常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#cd"><span class="toc-number">1.1.</span> <span class="toc-text">cd</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pwd"><span class="toc-number">1.2.</span> <span class="toc-text">pwd</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mkdir"><span class="toc-number">1.3.</span> <span class="toc-text">mkdir</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ls"><span class="toc-number">1.4.</span> <span class="toc-text">ls</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rm"><span class="toc-number">1.5.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vi"><span class="toc-number">1.6.</span> <span class="toc-text">vi</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#i-%E7%BC%96%E8%BE%91%E6%96%87%E4%BB%B6"><span class="toc-number">1.6.1.</span> <span class="toc-text">i    编辑文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tail"><span class="toc-number">1.6.2.</span> <span class="toc-text">tail</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cp"><span class="toc-number">1.7.</span> <span class="toc-text">cp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mv"><span class="toc-number">1.8.</span> <span class="toc-text">mv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gerp"><span class="toc-number">1.9.</span> <span class="toc-text">gerp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cat"><span class="toc-number">1.10.</span> <span class="toc-text">cat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#whereis"><span class="toc-number">1.11.</span> <span class="toc-text">whereis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#find"><span class="toc-number">1.12.</span> <span class="toc-text">find</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#echo-PATH"><span class="toc-number">1.13.</span> <span class="toc-text">echo $PATH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#which"><span class="toc-number">1.14.</span> <span class="toc-text">which</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#top"><span class="toc-number">1.15.</span> <span class="toc-text">top</span></a></li></ol></li></ol> 
+        </div>
+    
+ 
+
+        </div>
+    </div>
+</div>
+</div>
+ 
+    </main>
+
+    <!-- 底部栏 -->
+    <footer class="bg-dark pt-3 pb-0 mt-5" id="flex_bottom">
+    <div class="container pb-3 pt-3 text-center">
+        <p class="text-muted tag-hover">
+            All Rights Reserved <i class="fa fa-copyright"></i> 2017-2023 笑颜网 smileyan.cn <br> 
+            Powered by 
+             <a class="link-secondary text-decoration-none" target="_blank" rel="noopener" href="https://hexo.io">
+                 Hexo.io
+            </a> &  <a class="link-secondary text-decoration-none" target="_blank" rel="noopener" href="https://github.com/smile-yan/hexo-theme-heyan">
+               heyan
+            </a>
+            <br>
+            <a class="link-secondary text-decoration-none" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">
+                <img src="/police.png" style="width: 18px; height: 18px; margin-top: -4px" class="nofancybox">
+                湘ICP备 17012851号 
+            </a>
+        </p>
+    </div>
+</footer>
+
+</body> 
+</html>
