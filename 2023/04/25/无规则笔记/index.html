@@ -163,6 +163,11 @@
 <h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><p>1.可以依据实际情况在子pom中给定自己的版本号，而不使用父pom的</p>
 <p>2.dependencyManagement下的依赖只是被声明，而不会自动导入，子模块想要使用依赖仍需在dependencies（外层不能不含dependencyManagement）标签里导入依赖。</p>
 <h2 id="2023-05-22"><a href="#2023-05-22" class="headerlink" title="2023-05-22"></a>2023-05-22</h2><p>springboot+thymeleaf项目中static目录下的静态html页面可以通过端口号直接访问，例如127.0.0.1:8080.</p>
+<h2 id="2023-07-09"><a href="#2023-07-09" class="headerlink" title="2023-07-09"></a>2023-07-09</h2><p>同步、异步、阻塞、等待的简单理解</p>
+<p>同步：程序在处理某个请求时，若该请求一直没有返回信息，程序会一直等待下去</p>
+<p>异步：程序接收某个请求后，不会等待他的返回信息，就继续去执行下面的内容</p>
+<p>阻塞：某个线程阻塞=该线程的任务未完成之前程序不会处理其他线程</p>
+<p>等待：某个线程等待=程序不会处理该线程的任务直到等待时间结束或该线程被唤醒</p>
  
             </div>
         </div>
@@ -191,7 +196,7 @@
              
     
         <div>
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-04-28"><span class="toc-number">1.</span> <span class="toc-text">2023-04-28</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97collate%EF%BC%88%E4%B8%AD%E6%96%87%E6%84%8F%E6%80%9D%EF%BC%9A%E6%95%B4%E7%90%86%E3%80%81%E5%AF%B9%E7%85%A7%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">MySQL中的关键字collate（中文意思：整理、对照）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-04-30"><span class="toc-number">2.</span> <span class="toc-text">2023-04-30</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#maven%E9%87%8Cpom%E6%96%87%E4%BB%B6%E4%B8%ADdependencyManagement%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">2.1.</span> <span class="toc-text">maven里pom文件中dependencyManagement的作用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-05-22"><span class="toc-number">3.</span> <span class="toc-text">2023-05-22</span></a></li></ol> 
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-04-28"><span class="toc-number">1.</span> <span class="toc-text">2023-04-28</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97collate%EF%BC%88%E4%B8%AD%E6%96%87%E6%84%8F%E6%80%9D%EF%BC%9A%E6%95%B4%E7%90%86%E3%80%81%E5%AF%B9%E7%85%A7%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">MySQL中的关键字collate（中文意思：整理、对照）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-04-30"><span class="toc-number">2.</span> <span class="toc-text">2023-04-30</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#maven%E9%87%8Cpom%E6%96%87%E4%BB%B6%E4%B8%ADdependencyManagement%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">2.1.</span> <span class="toc-text">maven里pom文件中dependencyManagement的作用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-05-22"><span class="toc-number">3.</span> <span class="toc-text">2023-05-22</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-07-09"><span class="toc-number">4.</span> <span class="toc-text">2023-07-09</span></a></li></ol> 
         </div>
     
  
